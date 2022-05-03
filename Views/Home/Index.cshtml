@@ -1,0 +1,34 @@
+﻿@{
+    Layout = "_layout";
+}
+
+@section CSS{
+<link href="~/css/HomeStyle.css?ver=2" rel="stylesheet" type="text/css" />
+
+}
+
+@section Scripts{
+    <partial name="_ValidationScriptsPartial"></partial>
+
+}
+
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+
+<div class="Contenido">
+    <div class="Formulario">
+
+        <form asp-action="EvaluarComentario" asp-controller="Home" method="post">
+           @Html.AntiForgeryToken()  
+            <div class="form-group">
+                <label for="comentario" class="control-label"></label>
+                <input id="comentario" name="comentario" class="form-control" required autocomplete="off"/>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="btn btn-info">Verificar frase</button>
+            </div>
+        </form>
+
+    </div>
+</div>

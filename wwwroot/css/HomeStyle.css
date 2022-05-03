@@ -1,0 +1,18 @@
+﻿.Contenido {
+    height:auto;
+    width:100%;
+    display:flex;
+    justify-content:center;
+}
+
+.Formulario {
+    width:500px;
+    background-color:darkslategrey;
+    padding:30px;
+    border-radius:25px;
+    color:aliceblue;
+    height:auto;
+    text-align:center;
+
+}
+

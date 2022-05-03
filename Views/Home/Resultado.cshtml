@@ -1,0 +1,28 @@
+﻿@model string
+@{
+    Layout = "_layout";
+}
+
+@section CSS{
+<link href="~/css/HomeStyle.css?ver=2" rel="stylesheet" type="text/css" />
+
+}
+
+@section Scripts{
+    <partial name="_ValidationScriptsPartial"></partial>
+
+}
+
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+
+<div class="Contenido">
+    <div class="Formulario">
+
+       <h2>El resultado es : <br> <b> @Model </b></h2>
+       <br />
+       <a href="/Home/Index" style="background-color:floralwhite; padding:10px; border-radius:5px"> 
+           Regresar
+       </a>
+    </div>
+</div>
