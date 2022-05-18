@@ -1,16 +1,16 @@
 ﻿{
-  "TrainingTime": 40,
+  "TrainingTime": 600,
   "Scenario": "Classification",
   "DataSource": {
     "Type": "TabularFile",
     "Version": 1,
-    "FilePath": "C:\\Users\\Cfern\\Downloads\\sentiment labelled sentences\\yelp_labelled.txt",
-    "Delimiter": "\t",
+    "FilePath": "C:\\Users\\Cfern\\OneDrive\\Escritorio\\data.csv",
+    "Delimiter": ";",
     "DecimalMarker": ".",
-    "HasHeader": false,
+    "HasHeader": true,
     "ColumnProperties": [
       {
-        "ColumnName": "col0",
+        "ColumnName": "review_es",
         "ColumnPurpose": "Feature",
         "ColumnDataFormat": "String",
         "IsCategorical": false,
@@ -18,9 +18,9 @@
         "Version": 1
       },
       {
-        "ColumnName": "col1",
+        "ColumnName": "sentimiento",
         "ColumnPurpose": "Label",
-        "ColumnDataFormat": "Single",
+        "ColumnDataFormat": "String",
         "IsCategorical": true,
         "Type": "Column",
         "Version": 1
@@ -39,67 +39,60 @@
         "Version": 0,
         "Type": "Trial",
         "TrainerName": "SdcaMaximumEntropyMulti",
-        "Score": 0.48982247273725738,
-        "RuntimeInSeconds": 1.4309999942779541
-      },
-      {
-        "Version": 0,
-        "Type": "Trial",
-        "TrainerName": "LightGbmMulti",
-        "Score": 0.65547281124676238,
-        "RuntimeInSeconds": 2.9660000801086426
-      },
-      {
-        "Version": 0,
-        "Type": "Trial",
-        "TrainerName": "SdcaMaximumEntropyMulti",
-        "Score": 0.48982247273725738,
-        "RuntimeInSeconds": 1.5750000476837158
+        "Score": 0.4898522167487685,
+        "RuntimeInSeconds": 30.5
       },
       {
         "Version": 0,
         "Type": "Trial",
         "TrainerName": "FastForestOva",
-        "Score": 0.72803088919148418,
-        "RuntimeInSeconds": 9.6800003051757813
+        "Score": 0.70679802955665028,
+        "RuntimeInSeconds": 53.780998229980469
       },
       {
         "Version": 0,
         "Type": "Trial",
-        "TrainerName": "LbfgsMaximumEntropyMulti",
-        "Score": 0.7984582790817949,
-        "RuntimeInSeconds": 3.9049999713897705
+        "TrainerName": "FastTreeOva",
+        "Score": 0.67724137931034478,
+        "RuntimeInSeconds": 45.745998382568359
       },
       {
         "Version": 0,
         "Type": "Trial",
         "TrainerName": "SdcaLogisticRegressionOva",
-        "Score": 0.48982247273725738,
-        "RuntimeInSeconds": 3.252000093460083
+        "Score": 0.4898522167487685,
+        "RuntimeInSeconds": 54.549999237060547
       },
       {
         "Version": 0,
         "Type": "Trial",
         "TrainerName": "LbfgsLogisticRegressionOva",
-        "Score": 0.8042367487650115,
-        "RuntimeInSeconds": 4.6630001068115234
-      },
-      {
-        "Version": 0,
-        "Type": "Trial",
-        "TrainerName": "LbfgsLogisticRegressionOva",
-        "Score": 0.79490178439680659,
-        "RuntimeInSeconds": 7.7049999237060547
+        "Score": 0.84847290640394091,
+        "RuntimeInSeconds": 109.53700256347656
       },
       {
         "Version": 0,
         "Type": "Trial",
         "TrainerName": "LbfgsMaximumEntropyMulti",
-        "Score": 0.77260207702349271,
-        "RuntimeInSeconds": 1.6729999780654907
+        "Score": 0.84709359605911327,
+        "RuntimeInSeconds": 102.00800323486328
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "LightGbmMulti",
+        "Score": 0.67743842364532014,
+        "RuntimeInSeconds": 33.106998443603516
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "SdcaMaximumEntropyMulti",
+        "Score": 0.4898522167487685,
+        "RuntimeInSeconds": 132.63200378417969
       }
     ],
-    "Pipeline": "[{\"EstimatorType\":\"FeaturizeText\",\"Inputs\":[\"col0\"],\"Outputs\":[\"col0\"]},{\"EstimatorType\":\"Concatenate\",\"Inputs\":[\"col0\"],\"Outputs\":[\"Features\"]},{\"EstimatorType\":\"MapValueToKey\",\"Inputs\":[\"col1\"],\"Outputs\":[\"col1\"]},{\"EstimatorType\":\"NormalizeMinMax\",\"Inputs\":[\"Features\"],\"Outputs\":[\"Features\"]},{\"LabelColumnName\":\"col1\",\"FeatureColumnName\":\"Features\",\"L1Regularization\":\"0.769298710703117\",\"L2Regularization\":\"0.143288732769845\",\"EstimatorType\":\"LbfgsLogisticRegressionOva\",\"Inputs\":[\"col1\"],\"Outputs\":[\"Features\"]},{\"EstimatorType\":\"MapKeyToValue\",\"Inputs\":[\"PredictedLabel\"],\"Outputs\":[\"PredictedLabel\"]}]",
+    "Pipeline": "[{\"EstimatorType\":\"FeaturizeText\",\"Inputs\":[\"review_es\"],\"Outputs\":[\"review_es\"]},{\"EstimatorType\":\"Concatenate\",\"Inputs\":[\"review_es\"],\"Outputs\":[\"Features\"]},{\"EstimatorType\":\"MapValueToKey\",\"Inputs\":[\"sentimiento\"],\"Outputs\":[\"sentimiento\"]},{\"EstimatorType\":\"NormalizeMinMax\",\"Inputs\":[\"Features\"],\"Outputs\":[\"Features\"]},{\"LabelColumnName\":\"sentimiento\",\"FeatureColumnName\":\"Features\",\"L1Regularization\":\"1\",\"L2Regularization\":\"1\",\"EstimatorType\":\"LbfgsLogisticRegressionOva\",\"Inputs\":[\"sentimiento\"],\"Outputs\":[\"Features\"]},{\"EstimatorType\":\"MapKeyToValue\",\"Inputs\":[\"PredictedLabel\"],\"Outputs\":[\"PredictedLabel\"]}]",
     "MetricName": "MicroAccuracy"
   },
   "Type": "TrainingConfig",

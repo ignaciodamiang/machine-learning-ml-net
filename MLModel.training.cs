@@ -28,11 +28,11 @@ namespace AplicacionMachineLearning
         public static IEstimator<ITransformer> BuildPipeline(MLContext mlContext)
         {
             // Data process configuration with pipeline data transformations
-            var pipeline = mlContext.Transforms.Text.FeaturizeText(@"col0", @"col0")      
-                                    .Append(mlContext.Transforms.Concatenate(@"Features", @"col0"))      
-                                    .Append(mlContext.Transforms.Conversion.MapValueToKey(@"col1", @"col1"))      
+            var pipeline = mlContext.Transforms.Text.FeaturizeText(@"review_es", @"review_es")      
+                                    .Append(mlContext.Transforms.Concatenate(@"Features", @"review_es"))      
+                                    .Append(mlContext.Transforms.Conversion.MapValueToKey(@"sentimiento", @"sentimiento"))      
                                     .Append(mlContext.Transforms.NormalizeMinMax(@"Features", @"Features"))      
-                                    .Append(mlContext.MulticlassClassification.Trainers.OneVersusAll(binaryEstimator:mlContext.BinaryClassification.Trainers.LbfgsLogisticRegression(l1Regularization:0.769298710703117F,l2Regularization:0.143288732769845F,labelColumnName:@"col1",featureColumnName:@"Features"), labelColumnName: @"col1"))      
+                                    .Append(mlContext.MulticlassClassification.Trainers.OneVersusAll(binaryEstimator:mlContext.BinaryClassification.Trainers.LbfgsLogisticRegression(l1Regularization:1F,l2Regularization:1F,labelColumnName:@"sentimiento",featureColumnName:@"Features"), labelColumnName: @"sentimiento"))      
                                     .Append(mlContext.Transforms.Conversion.MapKeyToValue(@"PredictedLabel", @"PredictedLabel"));
 
             return pipeline;

@@ -15,11 +15,11 @@ namespace AplicacionMachineLearning
         #region model input class
         public class ModelInput
         {
-            [ColumnName(@"col0")]
-            public string Col0 { get; set; }
+            [ColumnName(@"review_es")]
+            public string Review_es { get; set; }
 
-            [ColumnName(@"col1")]
-            public float Col1 { get; set; }
+            [ColumnName(@"sentimiento")]
+            public string Sentimiento { get; set; }
 
         }
 
@@ -32,7 +32,7 @@ namespace AplicacionMachineLearning
         public class ModelOutput
         {
             [ColumnName("PredictedLabel")]
-            public float Prediction { get; set; }
+            public string Prediction { get; set; }
 
             public float[] Score { get; set; }
         }

@@ -32,23 +32,29 @@ namespace AplicacionMachineLearning.Controllers
             //Load sample data
             var sampleData = new MLModel.ModelInput()
             {
-                Col0 = comentario,
+                Review_es = comentario,
             };
 
             //Load model and predict output
             var result = MLModel.Predict(sampleData);
 
-            if (result.Score[0] > result.Score[1])
-            {
-                mensaje = "Una frase negativa";
-            }
-            else
+            if (result.Prediction == "positivo")
             {
                 mensaje = "Una frase positiva";
+
             }
+            else {
+                mensaje = "Una frase negativa";
+
+            }
+
+           
 
             return View("Resultado", mensaje);
         }
+
+        //Load sample data
+       
 
 
     }
