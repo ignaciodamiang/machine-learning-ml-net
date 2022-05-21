@@ -55,11 +55,20 @@ button.accept-policy {
 -------------------------------------------------- */
 html {
     position: relative;
-    min-height: 100%
+    min-height: 100%;
+
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+    background-image: url('../Inteligencia.gif'); 
+    background-repeat:no-repeat; 
+    background-size:100%;
+    background-position-y:center;
+    opacity:0.96;
+}
+
+main {
 }
 .footer {
   position: absolute;

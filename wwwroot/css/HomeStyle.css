@@ -1,18 +1,59 @@
-﻿.Contenido {
-    height:auto;
+﻿.contenedor {
+    display: grid;
+    padding: 10px;
+    gap: 10px;
+    height:400px;
     width:100%;
+    justify-content:center;
+    text-align:center;
+}
+
+
+
+.item1 {
+    grid-column: 1;
+    grid-row: 1;
+    
+}
+
+.item2 {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.item3 {
+    grid-column: 1/span 2;
+    grid-row: 2;
+}
+
+.caja {
     display:flex;
     justify-content:center;
+    align-items:center;
+    border:black solid 2px;
+    height:220px;
 }
 
-.Formulario {
-    width:500px;
-    background-color:darkslategrey;
-    padding:30px;
-    border-radius:25px;
-    color:aliceblue;
-    height:auto;
-    text-align:center;
+.caja:hover {
+    padding: 72px;
+    transition-duration: 0.4s;
+}
+
+
+.caja:not(:hover) {
+    padding: 70px;
+    transition-duration: 0.4s;
+}
+
+
+a {
+    color: aliceblue;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:25px;
 
 }
 
+a:hover {
+    text-decoration: none;
+    color: gainsboro;
+}

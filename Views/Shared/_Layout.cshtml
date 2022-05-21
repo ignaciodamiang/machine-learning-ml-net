@@ -5,16 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] Inteligencia Artificial Básica</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" type="text/css" />
+    <link rel="stylesheet" href="~/css/site.css?ver=2" type="text/css" />
 
     @RenderSection("CSS", required: false)
 
 </head>
-<body style="background-color:mediumpurple">
+<body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark border-bottom box-shadow mb-3">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Inteligencia Artificial Básica</a>
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Home IA</a>
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="EvaluarComentario">Criticas de Peliculas</a>
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="EvaluarImagen">Tipos de Comida</a>
+
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -31,9 +34,6 @@
         </nav>
         <div>
 
-            <h1 class="text-xl-center">
-                Inteligencia Artificial Básica
-            </h1>
 
         </div>
 

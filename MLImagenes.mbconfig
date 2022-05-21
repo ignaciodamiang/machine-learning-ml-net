@@ -1,0 +1,36 @@
+﻿{
+  "TrainingTime": 2147482,
+  "Scenario": "ImageClassification",
+  "DataSource": {
+    "Type": "Folder",
+    "Version": 1,
+    "FolderPath": "C:\\Users\\Cfern\\Downloads\\training"
+  },
+  "Environment": {
+    "Type": "Azure",
+    "Version": 1,
+    "SubscriptionID": "4379603a-85b6-49ce-93a5-925997599f3f",
+    "ResourceGroupName": "MLNETTraining",
+    "WorkspaceName": "MLNETTraining",
+    "ComputeName": "Proceso",
+    "Location": "australiaeast",
+    "ExperimentName": "Clasificacióndelaimagen"
+  },
+  "RunHistory": {
+    "Version": 0,
+    "Type": "Result",
+    "Trials": [
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "Azure AutoML Algorithm",
+        "Score": 9231722428748452.0,
+        "RuntimeInSeconds": 2613.5843962999998
+      }
+    ],
+    "Pipeline": "[{\"OutputColumnName\":\"input1\",\"ImageFolder\":\"\",\"InputColumnName\":\"ImageSource\",\"EstimatorType\":\"LoadImages\",\"Inputs\":[\"ImageSource\"],\"Outputs\":[\"input1\"]},{\"OutputColumnName\":\"input1\",\"InputColumnName\":\"input1\",\"ImageWidth\":\"224\",\"ImageHeight\":\"224\",\"CropAnchor\":\"Center\",\"Resizing\":\"IsoCrop\",\"EstimatorType\":\"ResizeImages\",\"Inputs\":[\"input1\"],\"Outputs\":[\"input1\"]},{\"OutputColumnName\":\"input1\",\"InputColumnName\":\"input1\",\"ColorsToExtract\":\"Rgb\",\"OrderOfExtraction\":\"ARGB\",\"EstimatorType\":\"ExtractPixels\",\"Inputs\":[\"input1\"],\"Outputs\":[\"input1\"]},{\"ModelFile\":\"C:\\\\Users\\\\Cfern\\\\source\\\\repos\\\\AplicacionMachineLearning\\\\MLImagenes.onnx\",\"EstimatorType\":\"ApplyOnnxModel\",\"Inputs\":null,\"Outputs\":null}]",
+    "MetricName": "accuracy"
+  },
+  "Type": "TrainingConfig",
+  "Version": 1
+}
