@@ -1,4 +1,4 @@
-﻿using AplicacionMachineLearning.Models;
+﻿using AplicacionMachineLearning.Model;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;

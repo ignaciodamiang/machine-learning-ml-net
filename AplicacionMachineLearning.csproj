@@ -52,7 +52,4 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\AplicacionMachineLearning.Modelo\AplicacionMachineLearning.Modelo.csproj" />
-  </ItemGroup>
 </Project>
