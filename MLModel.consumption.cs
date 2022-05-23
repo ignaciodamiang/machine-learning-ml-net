@@ -7,7 +7,7 @@ using System.IO;
 using System.Collections.Generic;
 namespace AplicacionMachineLearning
 {
-    public partial class MLModel
+    public partial class MLModel  
     {
         /// <summary>
         /// model input class for MLModel.

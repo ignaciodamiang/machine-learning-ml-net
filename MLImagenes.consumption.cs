@@ -70,7 +70,7 @@ namespace AplicacionMachineLearning
         /// <param name="input">model input.</param>
         /// <returns><seealso cref=" ModelOutput"/></returns>
         public static ModelOutput Predict(ModelInput input)
-        {
+            {
             var predEngine = PredictEngine.Value;
             return predEngine.Predict(input);
         }
