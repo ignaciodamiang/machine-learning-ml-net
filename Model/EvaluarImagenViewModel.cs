@@ -1,6 +1,6 @@
 ﻿namespace AplicacionMachineLearning.Model
 {
-    public class Class
+    public class EvaluarImagenViewModel
     {
     }
 }

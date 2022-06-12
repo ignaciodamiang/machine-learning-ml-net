@@ -12,7 +12,7 @@ namespace AplicacionMachineLearning.Model
             : base(options)
         {
         }
-        public DbSet<EvaluarComentarioView> Comentarios { get; set; }
+        public DbSet<EvaluarComentarioViewModel> Comentarios { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
