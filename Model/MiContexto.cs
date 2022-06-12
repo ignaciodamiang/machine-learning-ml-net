@@ -13,5 +13,13 @@ namespace AplicacionMachineLearning.Model
         {
         }
         public DbSet<EvaluarComentarioView> Comentarios { get; set; }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            if (!optionsBuilder.IsConfigured)
+            {
+                optionsBuilder.UseSqlServer("Data Source=.;Initial Catalog=MachineLearningDB;Integrated Security=True");
+            }
+        }
     }
 }
