@@ -1,0 +1,42 @@
+﻿@model AplicacionMachineLearning.Data.SpamInput
+
+@{
+    Layout = "_layout";
+}
+
+@section CSS{
+<link href="~/css/ComentarioStyle.css?val=0" rel="stylesheet" type="text/css" />
+
+}
+
+@section Scripts{
+<partial name="_ValidationScriptsPartial"></partial>
+
+@if(Model != null){
+<script src="~/js/Modal.js"></script>
+}
+}
+
+<div class="Contenido">
+    <div class="Formulario">
+        <h2 class="text-dark font-weight-bold"> Ingrese el e-mail o sms</h2>
+        <form asp-action="EvaluarEmail" asp-controller="Home" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+               <label asp-for="Message" class="control-label"></label>
+               <textarea asp-for="Message" class="form-control" ></textarea>
+               <span asp-validation-for="Message" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="btn btn-info">Verificar E-mail o sms</button>
+            </div>
+        </form>
+        
+        @if (ViewBag.Prediction != null)
+        {
+            <h4>El mail es: @ViewBag.Prediction.EsSpam</h4>
+        }
+    </div>
+</div>
+

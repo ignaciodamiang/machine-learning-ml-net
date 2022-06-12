@@ -1,4 +1,5 @@
-﻿using AplicacionMachineLearning.Model;
+﻿using AplicacionMachineLearning.Data;
+using AplicacionMachineLearning.Model;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -107,6 +108,21 @@ namespace AplicacionMachineLearning.Controllers
 
             return filepath;
 
+        }
+
+        public IActionResult EvaluarEmail()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult EvaluarEmail(SpamInput input)
+        {
+            var model = new SpamModel();
+            model.Build();
+            model.Train();
+            ViewBag.Prediction = model.Predict(input);
+            return View();
         }
     }
 
