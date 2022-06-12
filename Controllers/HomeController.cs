@@ -28,7 +28,6 @@ namespace AplicacionMachineLearning.Controllers
         {
             return View();
         }
-
     }
 
 

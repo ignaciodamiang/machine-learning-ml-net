@@ -44,7 +44,7 @@ namespace AplicacionMachineLearning.Controllers
 
             System.IO.File.Delete(path);
 
-            return View("EvaluarImagen", prediccion);
+            return View("Index", prediccion);
 
 
         }
