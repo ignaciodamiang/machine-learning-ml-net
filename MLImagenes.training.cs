@@ -36,7 +36,7 @@ namespace AplicacionMachineLearning
         public static IEstimator<ITransformer> BuildPipeline(MLContext mlContext)
         {   
             string rutaProyecto = contentRootPath;
-            string directorioActual = contentRootPath.Substring(0, 26);
+            string directorioActual = contentRootPath.Replace("source/repos/EjemploML.NET", "");
 
             // Data process configuration with pipeline data transformations
             var pipeline = mlContext.Transforms.LoadImages(outputColumnName:@"input1",imageFolder:@"",inputColumnName:@"ImageSource")      
