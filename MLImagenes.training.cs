@@ -6,15 +6,24 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.ML.Transforms.Image;
 using Microsoft.ML;
+using Microsoft.AspNetCore.Hosting;
 
 namespace AplicacionMachineLearning
 {
     public partial class MLImagenes
     {
-        public static ITransformer RetrainPipeline(MLContext context, IDataView trainData)
+        public static string contentRootPath { get; private set; }
+        public static string webRootPath { get; private set; }
+        public static string projectRootPath { get; private set; }
+
+        public static ITransformer RetrainPipeline(MLContext context, IDataView trainData, IWebHostEnvironment env)
         {
             var pipeline = BuildPipeline(context);
             var model = pipeline.Fit(trainData);
+
+            contentRootPath = env.ContentRootPath;
+            webRootPath = env.WebRootPath;
+            projectRootPath = AppContext.BaseDirectory;
 
             return model;
         }
@@ -25,12 +34,15 @@ namespace AplicacionMachineLearning
         /// <param name="mlContext"></param>
         /// <returns></returns>
         public static IEstimator<ITransformer> BuildPipeline(MLContext mlContext)
-        {
+        {   
+            string rutaProyecto = contentRootPath;
+            string directorioActual = contentRootPath.Substring(0, 26);
+
             // Data process configuration with pipeline data transformations
             var pipeline = mlContext.Transforms.LoadImages(outputColumnName:@"input1",imageFolder:@"",inputColumnName:@"ImageSource")      
                                     .Append(mlContext.Transforms.ResizeImages(imageWidth:224,imageHeight:224,outputColumnName:@"input1",inputColumnName:@"input1",cropAnchor:ImageResizingEstimator.Anchor.Center,resizing:ImageResizingEstimator.ResizingKind.IsoCrop))      
                                     .Append(mlContext.Transforms.ExtractPixels(outputColumnName:@"input1",inputColumnName:@"input1",colorsToExtract:ImagePixelExtractingEstimator.ColorBits.Rgb,orderOfExtraction:ImagePixelExtractingEstimator.ColorsOrder.ARGB))      
-                                    .Append(mlContext.Transforms.ApplyOnnxModel(modelFile:@"C:\Users\Cfern\source\repos\AplicacionMachineLearning\MLImagenes.onnx"));
+                                    .Append(mlContext.Transforms.ApplyOnnxModel(modelFile: @"${directorioActual}source\repos\AplicacionMachineLearning\MLImagenes.onnx"));
 
             return pipeline;
         }

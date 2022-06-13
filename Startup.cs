@@ -13,12 +13,18 @@ namespace AplicacionMachineLearning
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
+        public Startup(IConfiguration configuration, IWebHostEnvironment env)
         {
             Configuration = configuration;
+            contentRootPath = env.ContentRootPath;
+            webRootPath = env.WebRootPath;
+            projectRootPath = AppContext.BaseDirectory;
         }
 
         public IConfiguration Configuration { get; }
+        public string contentRootPath { get; private set; }
+        public string webRootPath { get; }
+        public string projectRootPath { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
