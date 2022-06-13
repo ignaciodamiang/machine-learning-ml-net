@@ -43,7 +43,7 @@ namespace AplicacionMachineLearning.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult EvaluarComentario(string comentario)
         {
-            string mensaje = _comentarioService.EvaluarComentarios(comentario);
+            ViewBag.Mensaje = _comentarioService.EvaluarComentarios(comentario);
             List<EvaluarComentario> listComentarios = _comentarioService.ObtenerListaDeComentarios();
 
             return View("EvaluarComentario", listComentarios);
