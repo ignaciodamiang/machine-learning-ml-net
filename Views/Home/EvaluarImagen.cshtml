@@ -20,7 +20,7 @@
 <div class="Contenido">
     <div class="Formulario">
         <h2 class="text-dark font-weight-bold">Ingrese una imagen de su plato favorito</h2>
-        <form asp-action="EvaluarImagen" asp-controller="EvaluarImagen" method="post" enctype="multipart/form-data">
+        <form asp-action="EvaluarImagen" asp-controller="Home" method="post" enctype="multipart/form-data">
             @Html.AntiForgeryToken()
             <div class="form-group">
                 <input type="file" id="imagen" name="file" class="btn btn-dark" value="Ingrese una imagen de comida"/>

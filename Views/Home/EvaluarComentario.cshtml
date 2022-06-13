@@ -21,7 +21,7 @@
 <div class="Contenido">
     <div class="Formulario">
         <h2 class="text-dark font-weight-bold"> Ingrese la critica de su Pelicula</h2>
-        <form asp-action="EvaluarComentario" asp-controller="EvaluarComentario" method="post">
+        <form asp-action="EvaluarComentario" asp-controller="Home" method="post">
             @Html.AntiForgeryToken()
             <div class="form-group">
                 <label for="comentario" class="control-label"></label>
