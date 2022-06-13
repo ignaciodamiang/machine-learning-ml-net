@@ -68,11 +68,13 @@ namespace AplicacionMachineLearning.Controllers
             return View();
         }
 
+
         [HttpPost]
         public IActionResult EvaluarImagen(IFormFile file)
         {
             string path = GuardarImagen(file);
-            ViewBag.Img = path;
+            ViewBag.Img = file.FileName;
+
             var sampleData = new MLImagenes.ModelInput()
             {
 
@@ -84,11 +86,8 @@ namespace AplicacionMachineLearning.Controllers
             var result = MLImagenes.Predict(sampleData);
             string prediccion = result.Prediction;
 
-             System.IO.File.Delete(path);
-
-           
-
-
+            //System.IO.File.Delete(path);
+            
             return View("EvaluarImagen", prediccion);
 
 

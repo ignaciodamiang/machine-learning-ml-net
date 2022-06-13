@@ -1,6 +1,5 @@
 ﻿@model string
 @{
-
 }
 
 
@@ -45,7 +44,7 @@
       </div>
       <div class="modal-body">
        <h5>La comida que usted eligió es del siguiente tipo: @Model</h5>
-        <img src="@ViewBag.Img" />
+        <img src="~/uploads/@ViewBag.Img"/>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Regresar</button>
