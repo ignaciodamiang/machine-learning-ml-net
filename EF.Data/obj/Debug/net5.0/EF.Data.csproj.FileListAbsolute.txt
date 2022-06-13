@@ -1,0 +1,15 @@
+D:\Programacion Web 3\MachineLearning\EF.Data\bin\Debug\net5.0\EF.Data.deps.json
+D:\Programacion Web 3\MachineLearning\EF.Data\bin\Debug\net5.0\EF.Data.runtimeconfig.json
+D:\Programacion Web 3\MachineLearning\EF.Data\bin\Debug\net5.0\EF.Data.runtimeconfig.dev.json
+D:\Programacion Web 3\MachineLearning\EF.Data\bin\Debug\net5.0\EF.Data.dll
+D:\Programacion Web 3\MachineLearning\EF.Data\bin\Debug\net5.0\EF.Data.pdb
+D:\Programacion Web 3\MachineLearning\EF.Data\obj\Debug\net5.0\EF.Data.csproj.AssemblyReference.cache
+D:\Programacion Web 3\MachineLearning\EF.Data\obj\Debug\net5.0\EF.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programacion Web 3\MachineLearning\EF.Data\obj\Debug\net5.0\EF.Data.AssemblyInfoInputs.cache
+D:\Programacion Web 3\MachineLearning\EF.Data\obj\Debug\net5.0\EF.Data.AssemblyInfo.cs
+D:\Programacion Web 3\MachineLearning\EF.Data\obj\Debug\net5.0\EF.Data.csproj.CoreCompileInputs.cache
+D:\Programacion Web 3\MachineLearning\EF.Data\obj\Debug\net5.0\EF.Data.dll
+D:\Programacion Web 3\MachineLearning\EF.Data\obj\Debug\net5.0\refint\EF.Data.dll
+D:\Programacion Web 3\MachineLearning\EF.Data\obj\Debug\net5.0\EF.Data.pdb
+D:\Programacion Web 3\MachineLearning\EF.Data\obj\Debug\net5.0\EF.Data.genruntimeconfig.cache
+D:\Programacion Web 3\MachineLearning\EF.Data\obj\Debug\net5.0\ref\EF.Data.dll

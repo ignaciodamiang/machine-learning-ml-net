@@ -1,0 +1,16 @@
+D:\Programacion Web 3\MachineLearning\AplicationMachineLearning.Service\obj\Debug\net5.0\AplicationMachineLearning.Service.csproj.AssemblyReference.cache
+D:\Programacion Web 3\MachineLearning\AplicationMachineLearning.Service\obj\Debug\net5.0\AplicationMachineLearning.Service.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programacion Web 3\MachineLearning\AplicationMachineLearning.Service\obj\Debug\net5.0\AplicationMachineLearning.Service.AssemblyInfoInputs.cache
+D:\Programacion Web 3\MachineLearning\AplicationMachineLearning.Service\obj\Debug\net5.0\AplicationMachineLearning.Service.AssemblyInfo.cs
+D:\Programacion Web 3\MachineLearning\AplicationMachineLearning.Service\obj\Debug\net5.0\AplicationMachineLearning.Service.csproj.CoreCompileInputs.cache
+D:\Programacion Web 3\MachineLearning\AplicationMachineLearning.Service\bin\Debug\net5.0\MLModel.zip
+D:\Programacion Web 3\MachineLearning\AplicationMachineLearning.Service\bin\Debug\net5.0\AplicationMachineLearning.Service.deps.json
+D:\Programacion Web 3\MachineLearning\AplicationMachineLearning.Service\bin\Debug\net5.0\AplicationMachineLearning.Service.dll
+D:\Programacion Web 3\MachineLearning\AplicationMachineLearning.Service\bin\Debug\net5.0\AplicationMachineLearning.Service.pdb
+D:\Programacion Web 3\MachineLearning\AplicationMachineLearning.Service\bin\Debug\net5.0\EF.Data.dll
+D:\Programacion Web 3\MachineLearning\AplicationMachineLearning.Service\bin\Debug\net5.0\EF.Data.pdb
+D:\Programacion Web 3\MachineLearning\AplicationMachineLearning.Service\obj\Debug\net5.0\AplicationMachineLearning.Service.csproj.CopyComplete
+D:\Programacion Web 3\MachineLearning\AplicationMachineLearning.Service\obj\Debug\net5.0\AplicationMachineLearning.Service.dll
+D:\Programacion Web 3\MachineLearning\AplicationMachineLearning.Service\obj\Debug\net5.0\refint\AplicationMachineLearning.Service.dll
+D:\Programacion Web 3\MachineLearning\AplicationMachineLearning.Service\obj\Debug\net5.0\AplicationMachineLearning.Service.pdb
+D:\Programacion Web 3\MachineLearning\AplicationMachineLearning.Service\obj\Debug\net5.0\ref\AplicationMachineLearning.Service.dll
