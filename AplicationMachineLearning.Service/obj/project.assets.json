@@ -7882,19 +7882,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Leandro\\.nuget\\packages\\": {}
+    "C:\\Users\\idg\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Programacion Web 3\\MachineLearning\\AplicationMachineLearning.Service\\AplicationMachineLearning.Service.csproj",
+      "projectUniqueName": "C:\\Users\\idg\\source\\repos\\EjemploML.NET\\AplicationMachineLearning.Service\\AplicationMachineLearning.Service.csproj",
       "projectName": "AplicationMachineLearning.Service",
-      "projectPath": "D:\\Programacion Web 3\\MachineLearning\\AplicationMachineLearning.Service\\AplicationMachineLearning.Service.csproj",
-      "packagesPath": "C:\\Users\\Leandro\\.nuget\\packages\\",
-      "outputPath": "D:\\Programacion Web 3\\MachineLearning\\AplicationMachineLearning.Service\\obj\\",
+      "projectPath": "C:\\Users\\idg\\source\\repos\\EjemploML.NET\\AplicationMachineLearning.Service\\AplicationMachineLearning.Service.csproj",
+      "packagesPath": "C:\\Users\\idg\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\idg\\source\\repos\\EjemploML.NET\\AplicationMachineLearning.Service\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Leandro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\idg\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -7908,8 +7908,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\Programacion Web 3\\MachineLearning\\EF.Data\\EF.Data.csproj": {
-              "projectPath": "D:\\Programacion Web 3\\MachineLearning\\EF.Data\\EF.Data.csproj"
+            "C:\\Users\\idg\\source\\repos\\EjemploML.NET\\EF.Data\\EF.Data.csproj": {
+              "projectPath": "C:\\Users\\idg\\source\\repos\\EjemploML.NET\\EF.Data\\EF.Data.csproj"
             }
           }
         }
@@ -7964,7 +7964,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
       }
     }
   }

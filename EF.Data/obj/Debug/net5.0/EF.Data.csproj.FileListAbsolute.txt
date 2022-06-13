@@ -13,3 +13,18 @@ D:\Programacion Web 3\MachineLearning\EF.Data\obj\Debug\net5.0\refint\EF.Data.dl
 D:\Programacion Web 3\MachineLearning\EF.Data\obj\Debug\net5.0\EF.Data.pdb
 D:\Programacion Web 3\MachineLearning\EF.Data\obj\Debug\net5.0\EF.Data.genruntimeconfig.cache
 D:\Programacion Web 3\MachineLearning\EF.Data\obj\Debug\net5.0\ref\EF.Data.dll
+C:\Users\idg\source\repos\EjemploML.NET\EF.Data\bin\Debug\net5.0\EF.Data.deps.json
+C:\Users\idg\source\repos\EjemploML.NET\EF.Data\bin\Debug\net5.0\EF.Data.runtimeconfig.json
+C:\Users\idg\source\repos\EjemploML.NET\EF.Data\bin\Debug\net5.0\EF.Data.runtimeconfig.dev.json
+C:\Users\idg\source\repos\EjemploML.NET\EF.Data\bin\Debug\net5.0\EF.Data.dll
+C:\Users\idg\source\repos\EjemploML.NET\EF.Data\bin\Debug\net5.0\EF.Data.pdb
+C:\Users\idg\source\repos\EjemploML.NET\EF.Data\obj\Debug\net5.0\EF.Data.csproj.AssemblyReference.cache
+C:\Users\idg\source\repos\EjemploML.NET\EF.Data\obj\Debug\net5.0\EF.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\idg\source\repos\EjemploML.NET\EF.Data\obj\Debug\net5.0\EF.Data.AssemblyInfoInputs.cache
+C:\Users\idg\source\repos\EjemploML.NET\EF.Data\obj\Debug\net5.0\EF.Data.AssemblyInfo.cs
+C:\Users\idg\source\repos\EjemploML.NET\EF.Data\obj\Debug\net5.0\EF.Data.csproj.CoreCompileInputs.cache
+C:\Users\idg\source\repos\EjemploML.NET\EF.Data\obj\Debug\net5.0\EF.Data.dll
+C:\Users\idg\source\repos\EjemploML.NET\EF.Data\obj\Debug\net5.0\refint\EF.Data.dll
+C:\Users\idg\source\repos\EjemploML.NET\EF.Data\obj\Debug\net5.0\EF.Data.pdb
+C:\Users\idg\source\repos\EjemploML.NET\EF.Data\obj\Debug\net5.0\EF.Data.genruntimeconfig.cache
+C:\Users\idg\source\repos\EjemploML.NET\EF.Data\obj\Debug\net5.0\ref\EF.Data.dll
