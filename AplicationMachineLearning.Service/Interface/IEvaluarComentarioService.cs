@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace AplicationMachineLearning.Service.Interface
 {
-    public interface IComentarioService
+    public interface IEvaluarComentarioService
     {
         string EvaluarComentarios(string comentario);
         List<EvaluarComentario> ObtenerListaDeComentarios();

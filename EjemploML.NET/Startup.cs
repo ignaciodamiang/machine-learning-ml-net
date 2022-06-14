@@ -29,8 +29,8 @@ namespace AplicacionMachineLearning
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddTransient<MLdataBaseContext>();
-            services.AddScoped<IComentarioRepository, ComentarioRepository>();
-            services.AddScoped<IComentarioService, ComentarioService>();
+            services.AddScoped<IEvaluarComentarioRepository, EvaluarComentarioRepository>();
+            services.AddScoped<IEvaluarComentarioService, EvaluarComentarioService>();
 
             services.AddControllersWithViews();
         }

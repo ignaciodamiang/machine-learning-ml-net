@@ -9,12 +9,12 @@ namespace AplicacionMachineLearning.Controllers
     public class EvaluarComentarioController : Controller
     {
         private readonly IWebHostEnvironment _hostingEnvironment;
-        private IComentarioService _comentarioService;
+        private IEvaluarComentarioService _evaluarComentarioService;
 
-        public EvaluarComentarioController(IWebHostEnvironment environment, IComentarioService comentarioService)
+        public EvaluarComentarioController(IWebHostEnvironment environment, IEvaluarComentarioService evaluarComentarioService)
         {
             _hostingEnvironment = environment;
-            _comentarioService = comentarioService;
+            _evaluarComentarioService = evaluarComentarioService;
         }
 
         public IActionResult Index()
@@ -32,8 +32,8 @@ namespace AplicacionMachineLearning.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult EvaluarComentario(string comentario)
         {
-            ViewBag.Mensaje = _comentarioService.EvaluarComentarios(comentario);
-            List<EvaluarComentario> listComentarios = _comentarioService.ObtenerListaDeComentarios();
+            ViewBag.Mensaje = _evaluarComentarioService.EvaluarComentarios(comentario);
+            List<EvaluarComentario> listComentarios = _evaluarComentarioService.ObtenerListaDeComentarios();
 
             return View("EvaluarComentario", listComentarios);
         }

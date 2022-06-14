@@ -8,11 +8,11 @@ using System.Threading.Tasks;
 
 namespace EF.Data.Repository
 {
-    public class ComentarioRepository : IComentarioRepository
+    public class EvaluarComentarioRepository : IEvaluarComentarioRepository
     {
         private MLdataBaseContext _ctx;
 
-        public ComentarioRepository(MLdataBaseContext ctx)
+        public EvaluarComentarioRepository(MLdataBaseContext ctx)
         {
             _ctx = ctx;
         }

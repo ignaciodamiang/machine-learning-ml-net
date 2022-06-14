@@ -11,13 +11,13 @@ using EF.Data.EF;
 
 namespace AplicationMachineLearning.Service
 {
-    public class ComentarioService : IComentarioService
+    public class EvaluarComentarioService : IEvaluarComentarioService
     {
-        private IComentarioRepository _comentarioRepository;
+        private IEvaluarComentarioRepository _evaluarComentarioRepository;
 
-        public ComentarioService(IComentarioRepository comentarioRepository)
+        public EvaluarComentarioService(IEvaluarComentarioRepository comentarioRepository)
         {
-            _comentarioRepository = comentarioRepository;
+            _evaluarComentarioRepository = comentarioRepository;
         }
         public string EvaluarComentarios(string comentario)
         {
@@ -36,21 +36,21 @@ namespace AplicationMachineLearning.Service
 
             if (result.Prediction == "positivo")
             {
-                _comentarioRepository.GuardarComentario(evaluarComentario);
-                _comentarioRepository.Savechange();
+                _evaluarComentarioRepository.GuardarComentario(evaluarComentario);
+                _evaluarComentarioRepository.Savechange();
                 return "Ese fue un comentario Positivo! Muchas gracias por comentar";
             }
             else
             {
-                _comentarioRepository.GuardarComentario(evaluarComentario);
-                _comentarioRepository.Savechange();
+                _evaluarComentarioRepository.GuardarComentario(evaluarComentario);
+                _evaluarComentarioRepository.Savechange();
                 return "Ese fue un comentario Negativo... lo sentimos!";
             }
         }
 
         public List<EvaluarComentario> ObtenerListaDeComentarios()
         {
-            return  _comentarioRepository.ObtenerListaDeComentarios();
+            return  _evaluarComentarioRepository.ObtenerListaDeComentarios();
         }
     }
 }

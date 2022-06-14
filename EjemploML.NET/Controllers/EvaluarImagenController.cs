@@ -1,6 +1,9 @@
-﻿using Microsoft.AspNetCore.Hosting;
+﻿using AplicationMachineLearning.Service.Interface;
+using EF.Data.EF;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
 using System.IO;
 
 namespace AplicacionMachineLearning.Controllers
@@ -8,9 +11,11 @@ namespace AplicacionMachineLearning.Controllers
     public class EvaluarImagenController : Controller
     {
         private readonly IWebHostEnvironment _hostingEnvironment;
-        public EvaluarImagenController(IWebHostEnvironment environment)
+        private IEvaluarImagenService _evaluarImagenService;
+        public EvaluarImagenController(IWebHostEnvironment environment, IEvaluarImagenService evaluarImagenService)
         {
             _hostingEnvironment = environment;
+            _evaluarImagenService = evaluarImagenService;
         }
 
         public IActionResult Index()
@@ -27,7 +32,9 @@ namespace AplicacionMachineLearning.Controllers
         [HttpPost]
         public IActionResult EvaluarImagen(IFormFile file)
         {
-            string path = GuardarImagen(file);
+            string path = _evaluarImagenService.GuardarImagen(file);
+            // string path = GuardarImagen(file);
+
             var sampleData = new MLImagenes.ModelInput()
             {
                 ImageSource = path,
@@ -42,16 +49,10 @@ namespace AplicacionMachineLearning.Controllers
         [HttpPost]
         public string GuardarImagen(IFormFile file)
         {
-            string uploads = Path.Combine(_hostingEnvironment.WebRootPath, "uploads");
-            string filepath = "";
-            if (file.Length > 0)
-            {
-                filepath = Path.Combine(uploads, file.FileName);
-                using (Stream fileStream = new FileStream(filepath, FileMode.Create))
 
-                    file.CopyToAsync(fileStream);
-            }
-            return filepath;
+            string path = _hostingEnvironment.WebRootPath;
+
+            return _evaluarImagenService.GuardarImagen(file, path);
         }
     }
 }
