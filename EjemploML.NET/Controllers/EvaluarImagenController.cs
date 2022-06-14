@@ -34,6 +34,7 @@ namespace AplicacionMachineLearning.Controllers
         {
             string pathEnviado = _hostingEnvironment.WebRootPath;
             string pathDevuelto = _evaluarImagenService.GuardarImagen(file, pathEnviado);
+            ViewBag.Img=file.FileName;
             // string path = GuardarImagen(file);
 
             var sampleData = new MLImagenes.ModelInput()
