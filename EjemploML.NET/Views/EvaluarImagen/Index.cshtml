@@ -1,0 +1,57 @@
+﻿@model string
+@{
+
+}
+
+
+@section CSS{
+<link href="~/css/ImagenesStyle.css" rel="stylesheet" type="text/css" />
+
+}
+
+@section Scripts{
+<partial name="_ValidationScriptsPartial"></partial>
+
+@if(Model != null){
+<script src="~/js/Modal.js"></script>
+}
+}
+
+<div class="Contenido">
+    <div class="Formulario">
+        <h2 class="text-dark font-weight-bold">Ingrese una imagen de su plato favorito</h2>
+        <form asp-action="EvaluarImagen" asp-controller="EvaluarImagen" method="post" enctype="multipart/form-data">
+            @Html.AntiForgeryToken()
+            <div class="form-group">
+                <input type="file" id="imagen" name="file" class="btn btn-dark" value="Ingrese una imagen de comida"/>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="btn btn-info">Analizar comida</button>
+            </div>
+        </form>
+
+    </div>
+</div>
+
+<div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Analisis del plato</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <h5>La comida que usted eligió es del siguiente tipo: @Model</h5>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Regresar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+

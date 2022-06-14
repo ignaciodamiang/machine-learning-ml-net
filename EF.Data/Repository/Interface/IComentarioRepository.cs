@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace EF.Data.Repository.Interface
 {
-    public interface IComentarioRepository
+    public interface IEvaluarComentarioRepository
     {
         void GuardarComentario(EvaluarComentario evaluarComentario);
         void Savechange();

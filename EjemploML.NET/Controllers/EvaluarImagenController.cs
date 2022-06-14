@@ -1,6 +1,9 @@
-﻿using Microsoft.AspNetCore.Hosting;
+﻿using AplicationMachineLearning.Service.Interface;
+using EF.Data.EF;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
 using System.IO;
 
 namespace AplicacionMachineLearning.Controllers
@@ -8,9 +11,11 @@ namespace AplicacionMachineLearning.Controllers
     public class EvaluarImagenController : Controller
     {
         private readonly IWebHostEnvironment _hostingEnvironment;
-        public EvaluarImagenController(IWebHostEnvironment environment)
+        private IEvaluarImagenService _evaluarImagenService;
+        public EvaluarImagenController(IWebHostEnvironment environment, IEvaluarImagenService evaluarImagenService)
         {
             _hostingEnvironment = environment;
+            _evaluarImagenService = evaluarImagenService;
         }
 
         public IActionResult Index()
@@ -27,31 +32,20 @@ namespace AplicacionMachineLearning.Controllers
         [HttpPost]
         public IActionResult EvaluarImagen(IFormFile file)
         {
-            string path = GuardarImagen(file);
+            string pathEnviado = _hostingEnvironment.WebRootPath;
+            string pathDevuelto = _evaluarImagenService.GuardarImagen(file, pathEnviado);
+            // string path = GuardarImagen(file);
+
             var sampleData = new MLImagenes.ModelInput()
             {
-                ImageSource = path,
+                ImageSource = pathDevuelto,
             };
             //Load model and predict output
             var result = MLImagenes.Predict(sampleData);
             string prediccion = result.Prediction;
-            System.IO.File.Delete(path);
-            return View("EvaluarImagen", prediccion);
+            //System.IO.File.Delete(pathEnviado);
+            return View("Index", prediccion);
         }
 
-        [HttpPost]
-        public string GuardarImagen(IFormFile file)
-        {
-            string uploads = Path.Combine(_hostingEnvironment.WebRootPath, "uploads");
-            string filepath = "";
-            if (file.Length > 0)
-            {
-                filepath = Path.Combine(uploads, file.FileName);
-                using (Stream fileStream = new FileStream(filepath, FileMode.Create))
-
-                    file.CopyToAsync(fileStream);
-            }
-            return filepath;
-        }
     }
 }

@@ -19,7 +19,6 @@ namespace AplicacionMachineLearning.Controllers
     public class HomeController : Controller
     {
         private readonly IWebHostEnvironment _hostingEnvironment;
-        private IComentarioService _comentarioService;
 
         public HomeController(IWebHostEnvironment environment)
         {
