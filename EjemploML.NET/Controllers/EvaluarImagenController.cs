@@ -43,8 +43,8 @@ namespace AplicacionMachineLearning.Controllers
             //Load model and predict output
             var result = MLImagenes.Predict(sampleData);
             string prediccion = result.Prediction;
-            System.IO.File.Delete(pathDevuelto);
-            return View("EvaluarImagen", prediccion);
+            //System.IO.File.Delete(pathEnviado);
+            return View("Index", prediccion);
         }
 
     }

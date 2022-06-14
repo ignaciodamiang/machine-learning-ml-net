@@ -35,7 +35,7 @@ namespace AplicacionMachineLearning.Controllers
             ViewBag.Mensaje = _evaluarComentarioService.EvaluarComentarios(comentario);
             List<EvaluarComentario> listComentarios = _evaluarComentarioService.ObtenerListaDeComentarios();
 
-            return View("EvaluarComentario", listComentarios);
+            return View("Index", listComentarios);
         }
     }
 }
