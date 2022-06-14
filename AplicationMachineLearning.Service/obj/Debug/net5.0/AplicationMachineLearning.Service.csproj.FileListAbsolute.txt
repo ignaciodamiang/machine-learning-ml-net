@@ -14,3 +14,20 @@ D:\Programacion Web 3\MachineLearning\AplicationMachineLearning.Service\obj\Debu
 D:\Programacion Web 3\MachineLearning\AplicationMachineLearning.Service\obj\Debug\net5.0\refint\AplicationMachineLearning.Service.dll
 D:\Programacion Web 3\MachineLearning\AplicationMachineLearning.Service\obj\Debug\net5.0\AplicationMachineLearning.Service.pdb
 D:\Programacion Web 3\MachineLearning\AplicationMachineLearning.Service\obj\Debug\net5.0\ref\AplicationMachineLearning.Service.dll
+C:\Users\Ezee\Documents\GitHub\EjemploML.NET\AplicationMachineLearning.Service\bin\Debug\net5.0\MLModel.zip
+C:\Users\Ezee\Documents\GitHub\EjemploML.NET\AplicationMachineLearning.Service\bin\Debug\net5.0\AplicationMachineLearning.Service.deps.json
+C:\Users\Ezee\Documents\GitHub\EjemploML.NET\AplicationMachineLearning.Service\bin\Debug\net5.0\AplicationMachineLearning.Service.dll
+C:\Users\Ezee\Documents\GitHub\EjemploML.NET\AplicationMachineLearning.Service\bin\Debug\net5.0\AplicationMachineLearning.Service.pdb
+C:\Users\Ezee\Documents\GitHub\EjemploML.NET\AplicationMachineLearning.Service\bin\Debug\net5.0\EF.Data.dll
+C:\Users\Ezee\Documents\GitHub\EjemploML.NET\AplicationMachineLearning.Service\bin\Debug\net5.0\EF.Data.pdb
+C:\Users\Ezee\Documents\GitHub\EjemploML.NET\AplicationMachineLearning.Service\obj\Debug\net5.0\AplicationMachineLearning.Service.csproj.AssemblyReference.cache
+C:\Users\Ezee\Documents\GitHub\EjemploML.NET\AplicationMachineLearning.Service\obj\Debug\net5.0\AplicationMachineLearning.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ezee\Documents\GitHub\EjemploML.NET\AplicationMachineLearning.Service\obj\Debug\net5.0\AplicationMachineLearning.Service.AssemblyInfoInputs.cache
+C:\Users\Ezee\Documents\GitHub\EjemploML.NET\AplicationMachineLearning.Service\obj\Debug\net5.0\AplicationMachineLearning.Service.AssemblyInfo.cs
+C:\Users\Ezee\Documents\GitHub\EjemploML.NET\AplicationMachineLearning.Service\obj\Debug\net5.0\AplicationMachineLearning.Service.csproj.CoreCompileInputs.cache
+C:\Users\Ezee\Documents\GitHub\EjemploML.NET\AplicationMachineLearning.Service\obj\Debug\net5.0\AplicationMachineLearning.Service.csproj.CopyComplete
+C:\Users\Ezee\Documents\GitHub\EjemploML.NET\AplicationMachineLearning.Service\obj\Debug\net5.0\AplicationMachineLearning.Service.dll
+C:\Users\Ezee\Documents\GitHub\EjemploML.NET\AplicationMachineLearning.Service\obj\Debug\net5.0\refint\AplicationMachineLearning.Service.dll
+C:\Users\Ezee\Documents\GitHub\EjemploML.NET\AplicationMachineLearning.Service\obj\Debug\net5.0\AplicationMachineLearning.Service.pdb
+C:\Users\Ezee\Documents\GitHub\EjemploML.NET\AplicationMachineLearning.Service\obj\Debug\net5.0\ref\AplicationMachineLearning.Service.dll
+C:\Users\Ezee\Documents\GitHub\EjemploML.NET\AplicationMachineLearning.Service\bin\Debug\net5.0\MLSpam.zip

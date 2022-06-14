@@ -7,26 +7,26 @@ using System.IO;
 using System.Collections.Generic;
 namespace AplicationMachineLearning_Service
 {
-    public partial class MLModel
+    public partial class MLSpam
     {
         /// <summary>
-        /// model input class for MLModel.
+        /// model input class for MLSpam.
         /// </summary>
         #region model input class
         public class ModelInput
         {
-            [ColumnName(@"review_es")]
-            public string Review_es { get; set; }
+            [ColumnName(@"col0")]
+            public string Col0 { get; set; }
 
-            [ColumnName(@"sentimiento")]
-            public string Sentimiento { get; set; }
+            [ColumnName(@"col1")]
+            public string Col1 { get; set; }
 
         }
 
         #endregion
 
         /// <summary>
-        /// model output class for MLModel.
+        /// model output class for MLSpam.
         /// </summary>
         #region model output class
         public class ModelOutput
@@ -39,7 +39,7 @@ namespace AplicationMachineLearning_Service
 
         #endregion
 
-        private static string MLNetModelPath = Path.GetFullPath(@"C:\Users\Ezee\Documents\GitHub\EjemploML.NET\AplicationMachineLearning.Service\MLModel.zip");
+        private static string MLNetModelPath = Path.GetFullPath("MLSpam.zip");
 
         public static readonly Lazy<PredictionEngine<ModelInput, ModelOutput>> PredictEngine = new Lazy<PredictionEngine<ModelInput, ModelOutput>>(() => CreatePredictEngine(), true);
 

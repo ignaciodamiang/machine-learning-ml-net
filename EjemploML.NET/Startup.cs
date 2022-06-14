@@ -31,6 +31,8 @@ namespace AplicacionMachineLearning
             services.AddTransient<MLdataBaseContext>();
             services.AddScoped<IComentarioRepository, ComentarioRepository>();
             services.AddScoped<IComentarioService, ComentarioService>();
+            services.AddScoped<IEmailRepository, EmailRepository>();
+            services.AddScoped<IEmailServicio, EmailServicio>();
 
             services.AddControllersWithViews();
         }

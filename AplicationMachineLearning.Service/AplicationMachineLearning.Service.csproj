@@ -25,4 +25,16 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
+  <ItemGroup Label="MLSpam">
+    <None Include="MLSpam.consumption.cs">
+      <DependentUpon>MLSpam.mbconfig</DependentUpon>
+    </None>
+    <None Include="MLSpam.training.cs">
+      <DependentUpon>MLSpam.mbconfig</DependentUpon>
+    </None>
+    <None Include="MLSpam.zip">
+      <DependentUpon>MLSpam.mbconfig</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
 </Project>
