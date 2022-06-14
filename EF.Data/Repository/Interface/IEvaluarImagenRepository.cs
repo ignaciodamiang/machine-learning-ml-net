@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace EF.Data.Repository.Interface
 {
-    internal interface IEvaluarImagenRepository
+    public interface IEvaluarImagenRepository
     {
         void GuardarImagen(EvaluarImagen evaluarImagen);
     }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EF.Data.EF
 {
-    internal class EvaluarImagen
+    public class EvaluarImagen
     {
     }
 }

@@ -1,11 +1,12 @@
 ﻿using AplicationMachineLearning.Service.Interface;
 using System;
 using System.IO;
-using Microsoft.AspNetCore.Http.IFormFile;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore;
 
 namespace AplicationMachineLearning.Service
 {
-    internal class EvaluarImagenService : IEvaluarImagenService
+    public class EvaluarImagenService : IEvaluarImagenService
     {
         public void EvaluarImagen()
         {

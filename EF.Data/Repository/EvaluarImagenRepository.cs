@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace EF.Data.Repository
 {
-    internal class EvaluarImagenRepository : IEvaluarImagenRepository
+    public class EvaluarImagenRepository : IEvaluarImagenRepository
     {
         private MLdataBaseContext _ctx;
         public EvaluarImagenRepository(MLdataBaseContext ctx)

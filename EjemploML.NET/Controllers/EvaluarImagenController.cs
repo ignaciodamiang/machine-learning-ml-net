@@ -32,27 +32,20 @@ namespace AplicacionMachineLearning.Controllers
         [HttpPost]
         public IActionResult EvaluarImagen(IFormFile file)
         {
-            string path = _evaluarImagenService.GuardarImagen(file);
+            string pathEnviado = _hostingEnvironment.WebRootPath;
+            string pathDevuelto = _evaluarImagenService.GuardarImagen(file, pathEnviado);
             // string path = GuardarImagen(file);
 
             var sampleData = new MLImagenes.ModelInput()
             {
-                ImageSource = path,
+                ImageSource = pathDevuelto,
             };
             //Load model and predict output
             var result = MLImagenes.Predict(sampleData);
             string prediccion = result.Prediction;
-            System.IO.File.Delete(path);
+            System.IO.File.Delete(pathDevuelto);
             return View("EvaluarImagen", prediccion);
         }
 
-        [HttpPost]
-        public string GuardarImagen(IFormFile file)
-        {
-
-            string path = _hostingEnvironment.WebRootPath;
-
-            return _evaluarImagenService.GuardarImagen(file, path);
-        }
     }
 }
