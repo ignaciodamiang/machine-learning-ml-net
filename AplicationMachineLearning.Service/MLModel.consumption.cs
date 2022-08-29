@@ -39,7 +39,7 @@ namespace AplicationMachineLearning_Service
 
         #endregion
 
-        private static string MLNetModelPath = Path.GetFullPath(@"C:\Users\idg\source\repos\EjemploML.NET\AplicationMachineLearning.Service\MLModel.zip");
+        private static string MLNetModelPath = Path.GetFullPath(@"C:\Users\Cfern\OneDrive\Escritorio\Universidad\Programacion Web III\Trabajo ML\EjemploML.NET\AplicationMachineLearning.Service\MLModel.zip");
 
         public static readonly Lazy<PredictionEngine<ModelInput, ModelOutput>> PredictEngine = new Lazy<PredictionEngine<ModelInput, ModelOutput>>(() => CreatePredictEngine(), true);
 

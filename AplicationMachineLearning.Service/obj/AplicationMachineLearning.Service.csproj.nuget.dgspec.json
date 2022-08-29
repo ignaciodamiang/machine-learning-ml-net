@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\idg\\source\\repos\\EjemploML.NET\\AplicationMachineLearning.Service\\AplicationMachineLearning.Service.csproj": {}
+    "C:\\Users\\Cfern\\Desktop\\Universidad\\18 Materias Aprobadas\\3er Año (1er Cuatrimestre)\\Programacion Web III\\Trabajo ML\\EjemploML.NET\\AplicationMachineLearning.Service\\AplicationMachineLearning.Service.csproj": {}
   },
   "projects": {
-    "C:\\Users\\idg\\source\\repos\\EjemploML.NET\\AplicationMachineLearning.Service\\AplicationMachineLearning.Service.csproj": {
+    "C:\\Users\\Cfern\\Desktop\\Universidad\\18 Materias Aprobadas\\3er Año (1er Cuatrimestre)\\Programacion Web III\\Trabajo ML\\EjemploML.NET\\AplicationMachineLearning.Service\\AplicationMachineLearning.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\idg\\source\\repos\\EjemploML.NET\\AplicationMachineLearning.Service\\AplicationMachineLearning.Service.csproj",
+        "projectUniqueName": "C:\\Users\\Cfern\\Desktop\\Universidad\\18 Materias Aprobadas\\3er Año (1er Cuatrimestre)\\Programacion Web III\\Trabajo ML\\EjemploML.NET\\AplicationMachineLearning.Service\\AplicationMachineLearning.Service.csproj",
         "projectName": "AplicationMachineLearning.Service",
-        "projectPath": "C:\\Users\\idg\\source\\repos\\EjemploML.NET\\AplicationMachineLearning.Service\\AplicationMachineLearning.Service.csproj",
-        "packagesPath": "C:\\Users\\idg\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\idg\\source\\repos\\EjemploML.NET\\AplicationMachineLearning.Service\\obj\\",
+        "projectPath": "C:\\Users\\Cfern\\Desktop\\Universidad\\18 Materias Aprobadas\\3er Año (1er Cuatrimestre)\\Programacion Web III\\Trabajo ML\\EjemploML.NET\\AplicationMachineLearning.Service\\AplicationMachineLearning.Service.csproj",
+        "packagesPath": "C:\\Users\\Cfern\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Cfern\\Desktop\\Universidad\\18 Materias Aprobadas\\3er Año (1er Cuatrimestre)\\Programacion Web III\\Trabajo ML\\EjemploML.NET\\AplicationMachineLearning.Service\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\idg\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Cfern\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +28,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\idg\\source\\repos\\EjemploML.NET\\EF.Data\\EF.Data.csproj": {
-                "projectPath": "C:\\Users\\idg\\source\\repos\\EjemploML.NET\\EF.Data\\EF.Data.csproj"
+              "C:\\Users\\Cfern\\Desktop\\Universidad\\18 Materias Aprobadas\\3er Año (1er Cuatrimestre)\\Programacion Web III\\Trabajo ML\\EjemploML.NET\\EF.Data\\EF.Data.csproj": {
+                "projectPath": "C:\\Users\\Cfern\\Desktop\\Universidad\\18 Materias Aprobadas\\3er Año (1er Cuatrimestre)\\Programacion Web III\\Trabajo ML\\EjemploML.NET\\EF.Data\\EF.Data.csproj"
               }
             }
           }
@@ -106,21 +106,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.303\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\idg\\source\\repos\\EjemploML.NET\\EF.Data\\EF.Data.csproj": {
+    "C:\\Users\\Cfern\\Desktop\\Universidad\\18 Materias Aprobadas\\3er Año (1er Cuatrimestre)\\Programacion Web III\\Trabajo ML\\EjemploML.NET\\EF.Data\\EF.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\idg\\source\\repos\\EjemploML.NET\\EF.Data\\EF.Data.csproj",
+        "projectUniqueName": "C:\\Users\\Cfern\\Desktop\\Universidad\\18 Materias Aprobadas\\3er Año (1er Cuatrimestre)\\Programacion Web III\\Trabajo ML\\EjemploML.NET\\EF.Data\\EF.Data.csproj",
         "projectName": "EF.Data",
-        "projectPath": "C:\\Users\\idg\\source\\repos\\EjemploML.NET\\EF.Data\\EF.Data.csproj",
-        "packagesPath": "C:\\Users\\idg\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\idg\\source\\repos\\EjemploML.NET\\EF.Data\\obj\\",
+        "projectPath": "C:\\Users\\Cfern\\Desktop\\Universidad\\18 Materias Aprobadas\\3er Año (1er Cuatrimestre)\\Programacion Web III\\Trabajo ML\\EjemploML.NET\\EF.Data\\EF.Data.csproj",
+        "packagesPath": "C:\\Users\\Cfern\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Cfern\\Desktop\\Universidad\\18 Materias Aprobadas\\3er Año (1er Cuatrimestre)\\Programacion Web III\\Trabajo ML\\EjemploML.NET\\EF.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\idg\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Cfern\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -190,7 +190,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.303\\RuntimeIdentifierGraph.json"
         }
       }
     }

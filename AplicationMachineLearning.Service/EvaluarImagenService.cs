@@ -1,14 +1,18 @@
 ﻿using AplicationMachineLearning.Service.Interface;
+using Microsoft.AspNetCore.Http;
 using System;
 using System.IO;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore;
 
 namespace AplicationMachineLearning.Service
 {
     public class EvaluarImagenService : IEvaluarImagenService
     {
         public void EvaluarImagen()
+        {
+            throw new NotImplementedException();
+        }
+
+        public object EvaluarImagen(string pathDevuelto)
         {
             throw new NotImplementedException();
         }
@@ -26,5 +30,6 @@ namespace AplicationMachineLearning.Service
             }
             return filepath;
         }
+
     }
 }

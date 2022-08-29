@@ -23,7 +23,7 @@ namespace EF.Data.EF
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Server=localhost;Database=MLdataBase;Trusted_Connection=True; ");
+                optionsBuilder.UseSqlServer("Server=localhost\\SQLEXPRESS;Database=MLdataBase;Trusted_Connection=True; ");
             }
         }
 

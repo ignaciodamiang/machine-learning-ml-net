@@ -11,6 +11,6 @@ namespace AplicationMachineLearning.Service.Interface
     {
         void EvaluarImagen ();
         string GuardarImagen(IFormFile file, string path);
-
+        object EvaluarImagen(string pathDevuelto);
     }
 }
